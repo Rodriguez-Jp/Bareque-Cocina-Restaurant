@@ -9,7 +9,7 @@ a {
 }
 
 /* Typography */
-.main-headings {
+.main-headings  { /* h1 headings */
   color: #fff;
   font-family: Book Antiqua, serif;
   font-size: 3rem;
@@ -61,7 +61,7 @@ a {
   color: #fff;
 }
 /* Font Awesome Icons */
-.menu-icons {
+.menu-icons { /* icons used for dropdown mobile menu */
   background-color: #000;
   display: block;
 }

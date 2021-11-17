@@ -1,6 +1,12 @@
+/* CSS Variables */
+:root {
+  --black: #000;
+  --white: #fff;
+  --goldenbrown: #5D492C;
+}
 /* Global Styling */
 body {
-  background-color: #000;
+  background-color: var(--black);
   margin: 0;
 }
 a {
@@ -8,10 +14,33 @@ a {
   font-size: 1rem;
   text-decoration: none;
 }
+/*Repeated Color Stylings */
+.divider-image,
+.menu-icons,
+.nav,
+.nav-links,
+.footer {
+  background-color: var(--black);
+}
+.main-headings,
+.menu-icon-1,
+.menu-icon-2,
+.paragraph-text,
+.footer {
+  color: var(--white);
+}
+/* Repeated Structure Styling */
+.landing-section,
+.menu-home-section,
+.location-home-section,
+.reservations-home-section {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
 
+}
 /* Typography */
 .main-headings  { /* h1 headings */
-  color: #fff;
   font-family: Book Antiqua, serif;
   font-size: 3rem;
   font-weight: lighter;
@@ -19,24 +48,32 @@ a {
 }
 .paragraph-text {
   font-size: 1rem;
-  color: white;
   line-height: 1.5rem;
 }
 /* Buttons */
 .mobile-btns {
-  font-family: serif;
-  font-size: 1.25rem;
-  font-weight: bold;
-  height: 40px;
-  width: 100px;
+  border-radius: 10px;
+  border-style: none;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  font-family: Merriweather, serif;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-top: 50px;
+  padding: 8px 32px;;
 }
+/* Hover status for buttons */
 .mobile-btns:hover {
   background-color: #BBA484;
-  color: white;
+  box-shadow: 0px 10px 50px rgba(187, 164, 132, 0.5);
+  color: var(--white);
+  transform: translateY(-7px);
+}
+/* Pressed status for buttons */
+.mobile-btns:active {
+  background-color: var(--goldenbrown);
 }
 /* Random Styling */
 .divider-image {
-  background-color: #000;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -47,24 +84,18 @@ a {
 }
 /* Font Awesome Icons */
 .menu-icons { /* icons used for dropdown mobile menu */
-  background-color: #000;
   display: block;
 }
-.fa-bars {
-  color: white;
+.menu-icon-1 {
   font-size: 2rem;
 }
-.fa-glass-martini-alt {
-  color: white;
+.menu-icon-2 {
   display: none;
   font-size: 2rem;
 }
 
 /* Navbar */
 .nav {
-  align-items: center;
-  background-color: #000;
-  display: flex;
   padding: 5px 20px;
   position: relative;
 }
@@ -72,31 +103,38 @@ a {
   height: 100%;
   width: 150px;
 }
+.nav-logo-div {
+  text-align: center;
+}
 .nav-links {
-  background-color: #000;
   display: none;
   padding-bottom: 20px;
   text-align: center;
 }
 .nav-links a {
-  color: #fff;
+  color: var(--white);
   display: block;
   padding: 10px 0;
   text-decoration: none;
 }
 .nav-links a:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: var(--white);
+  color: var(--black);
   text-decoration: underline;
 }
-.nav-link-toggle {
-  margin-right: 25%;
+.nav-links a:active {
+  background-color: var(--white);
 }
 
+.links-div { /* Div for Hamburger Menu Links */
+  /* this is to keep it center aligned with logo */
+  position: absolute;
+  text-align: left;
+  top: 50px;
+  left: 20px;
+}
 /* Footer */
 .footer {
-  background-color: #000;
-  color: #fff;
   padding: 0 24px 24px;
 }
 .footer-logo {
@@ -111,9 +149,6 @@ a {
 /* Landing Page */
 .landing-section {
   background-image: url(images/bareque1.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
 .landing-body,
 .menu-home-body,
@@ -132,7 +167,7 @@ a {
   margin: 0;
 }
 .landing-body p {
-  color: #fff;
+  color: var(--white);
 }
 .landing-cta-btn {
   border-radius: 20px;
@@ -141,15 +176,10 @@ a {
   margin-top: 20px;
   padding: 8px 32px;
 }
-.landing-cta-btn:hover {
 
-}
 /* Menu Section */
 .menu-home-section {
   background-image: url(images/carbonnara.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
 
 /* Contact Section */
@@ -165,16 +195,16 @@ a {
   flex-direction: column;
 }
 .contact-icons i {
-  color: white;
+  color: var(--white);
   font-size: 3rem;
   margin: 32px 0;
+}
+.contact-icons a {
+  display: inline-block;
 }
 /* Location Section */
 .location-home-section {
   background-image: url(images/bareque6.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
   margin: 20px 0 40px;
 }
 .location-home-body {
@@ -183,9 +213,6 @@ a {
 /* Reservations */
 .reservations-home-section {
   background-image: url(images/bareque2.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
 }
 .reservations-home-body {
   background-color: rgb(0,0,0, .7);

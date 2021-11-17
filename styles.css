@@ -1,5 +1,6 @@
 /* Global Styling */
 body {
+  background-color: #000;
   margin: 0;
 }
 a {
@@ -9,7 +10,7 @@ a {
 }
 
 /* Typography */
-.main-headings {
+.main-headings  { /* h1 headings */
   color: #fff;
   font-family: Book Antiqua, serif;
   font-size: 3rem;
@@ -18,7 +19,45 @@ a {
 }
 .paragraph-text {
   font-size: 1rem;
+  color: white;
   line-height: 1.5rem;
+}
+/* Buttons */
+.mobile-btns {
+  font-family: serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  height: 40px;
+  width: 100px;
+}
+.mobile-btns:hover {
+  background-color: #BBA484;
+  color: white;
+}
+/* Random Styling */
+.divider-image {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.divider-image img {
+  text-align: center;
+  width: 80%;
+}
+/* Font Awesome Icons */
+.menu-icons { /* icons used for dropdown mobile menu */
+  background-color: #000;
+  display: block;
+}
+.fa-bars {
+  color: white;
+  font-size: 2rem;
+}
+.fa-glass-martini-alt {
+  color: white;
+  display: none;
+  font-size: 2rem;
 }
 
 /* Navbar */
@@ -29,8 +68,7 @@ a {
   padding: 5px 20px;
   position: relative;
 }
-.nav-logo,
-.footer-logo {
+.nav-logo {
   height: 100%;
   width: 150px;
 }
@@ -59,20 +97,15 @@ a {
 .footer {
   background-color: #000;
   color: #fff;
+  padding: 0 24px 24px;
 }
-/* Font Awesome Icons */
-.menu-icons {
-  background-color: #000;
-  display: block;
+.footer-logo {
+  height: 100%;
+  width: 150px;
 }
-.fa-bars {
-  color: white;
-  font-size: 2rem;
-}
-.fa-grip-lines {
-  color: white;
-  display: none;
-  font-size: 2rem;
+.footer-logo-div {
+  display: flex;
+  justify-content: center;
 }
 
 /* Landing Page */
@@ -101,7 +134,52 @@ a {
 .landing-body p {
   color: #fff;
 }
+.landing-cta-btn {
+  border-radius: 20px;
+  border-style: none;
+  line-height: 20px;
+  margin-top: 20px;
+  padding: 8px 32px;
+}
+.landing-cta-btn:hover {
 
+}
+/* Menu Section */
+.menu-home-section {
+  background-image: url(images/carbonnara.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+/* Contact Section */
+.contact-home-body {
+  background-color: black;
+  height: 100vh;
+}
+.contact-home-body h1 {
+  margin-top: 0;
+}
+.contact-icons {
+  display: flex;
+  flex-direction: column;
+}
+.contact-icons i {
+  color: white;
+  font-size: 3rem;
+  margin: 32px 0;
+}
+/* Location Section */
+.location-home-section {
+  background-image: url(images/bareque6.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 20px 0 40px;
+}
+.location-home-body {
+  background-color: rgb(0,0,0, .7);
+}
 /* Reservations */
 .reservations-home-section {
   background-image: url(images/bareque2.jpeg);

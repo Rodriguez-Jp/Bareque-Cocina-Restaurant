@@ -8,6 +8,10 @@
   <title>Bareque Cocina</title>
   <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
   <!-- Javascript Scripts -->
@@ -21,14 +25,13 @@
       <div>
         <!-- Navbar -->
         <nav class="nav">
-          <div id="nav-link-toggle" class="nav-link-toggle">
-            <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick1();" class="menu-icons" id="bars-link"> <i class="fas fa-bars"></i>
+          <div class="links-div">
+            <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick1();" class="menu-icons"> <i class="fas fa-bars menu-icon-1"></i>
             </a>
-            <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();"
-            onclick="mobileMenuClick2();" class="menu-icons" id="second-menu-icon"> <i class="fas fa-glass-martini-alt"></i>
+            <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick2();" class="menu-icons"> <i class="fas fa-glass-martini-alt menu-icon-2"></i>
             </a>
           </div>
-          <div>
+          <div class="nav-logo-div">
             <a href="#"><img class="nav-logo" src="images/logo bareque.png" alt="bareque restaurant logo"></a>
           </div>
         </nav>
@@ -43,15 +46,15 @@
     </header>
     <!-- Landing Section -->
     <section id="landing-section" class="landing-section">
-        <div id="landing-body" class="landing-body">
+      <div id="landing-body" class="landing-body">
         <h1 class="main-headings">Bareque Cocina</h1>
         <img src="images/silverware.png" alt="border image">
         <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius, assumenda officiis, tempore delectus magni debitis expedita, saepe labore veniam! Quod, ab,
           labore.</p>
         <div class="landing-btn-div">
-            <button type="button" class="landing-cta-btn">Visit Us!</button>
+          <button type="button" class="mobile-btns">Visit Us!</button>
         </div>
-        </div>
+      </div>
     </section>
     <!-- <div class="divider-image">
           <hr style="width: 80%;">
@@ -60,35 +63,37 @@
     <section id="menu-home-section" class="menu-home-section">
       <div class="menu-home-body">
         <h1 class="main-headings">Nuestro Menu</h1>
-        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nulla eos dolores alias, illo quaerat modi ipsa ut perferendis, nam voluptas doloremque optio beatae! Fugiat delectus recusandae fuga eligendi vitae!</p>
+        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nulla eos dolores alias, illo quaerat modi ipsa ut perferendis, nam voluptas doloremque optio beatae! Fugiat delectus recusandae fuga eligendi
+          vitae!</p>
         <div>
-          <button type="button" class="mobile-btns">MENU</button>
+          <button type="button" class="mobile-btns">Menu</button>
         </div>
       </div>
     </section>
-      <!-- Contact Section -->
+    <!-- Contact Section -->
     <section id="contact-home-section">
       <div class="contact-home-body">
         <h1 class="main-headings">Contacto</h1>
         <div class="contact-icons">
-          <i class="fab fa-instagram"></i>
-          <i class="fas fa-phone-alt"></i>
-          <i class="far fa-envelope"></i>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fas fa-phone-alt"></i></a>
+          <a href="#"><i class="far fa-envelope"></i></a>
         </div>
       </div>
     </section>
-      <!-- Location Section -->
+    <!-- Location Section -->
     <section id="location-home-section" class="location-home-section">
       <div class="location-home-body">
         <h1 class="main-headings">Donde encontrarnos?</h1>
         <div>Map</div>
       </div>
     </section>
-      <!-- Reservations Section -->
+    <!-- Reservations Section -->
     <section id="reservations-home-section" class="reservations-home-section">
       <div class="reservations-home-body">
         <h1 class="main-headings">Reservations</h1>
-        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur officia, blanditiis cupiditate, laboriosam pariatur rerum nihil iste doloremque quam quod repudiandae provident et ipsum omnis, magnam quaerat id eveniet.</p>
+        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur officia, blanditiis cupiditate, laboriosam pariatur rerum nihil iste doloremque quam quod repudiandae provident et ipsum omnis, magnam quaerat
+          id eveniet.</p>
         <div>
           <button type="button" class="mobile-btns">Reserve</button>
         </div>

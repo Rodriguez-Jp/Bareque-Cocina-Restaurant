@@ -1,6 +1,6 @@
 // HAMBURGER MENU //
 const navMenuIcon1 = $("#bars-link"); //triple bar menu icon
-const navMenuIcon2 = $(".fa-grip-lines"); //double bar menu icon
+const navMenuIcon2 = $(".fa-glass-martini-alt"); //double bar menu icon
 const pageLinkMenu = $("#nav-links"); //menu links (i.e. Menu, Contact, Home)
 
 //function attached to 'click' event listener for mobile menu dropdown (click event applied in html)
@@ -17,10 +17,10 @@ function mobileMenuClick2() {
 //function for mouseover event listener for menu icons
 function mobileMenuMouseover() {
 $(".fa-bars").css("color","#BBA484");
-$(".fa-grip-lines").css("color","#BBA484");
+$(".fa-glass-martini-alt").css("color","#BBA484");
 };
 
 function mobileMenuMouseleave() {
 $(".fa-bars").css("color","#fff");
-$(".fa-grip-lines").css("color","#fff");
+$(".fa-glass-martini-alt").css("color","#fff");
 };

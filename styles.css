@@ -32,12 +32,12 @@ a {
 /* Repeated Structure Styling */
 .landing-section,
 .menu-home-section,
+.contact-home-section,
 .location-home-section,
 .reservations-home-section {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-
 }
 /* Typography */
 .main-headings  { /* h1 headings */
@@ -58,14 +58,14 @@ a {
   font-family: Merriweather, serif;
   font-size: 1rem;
   font-weight: 200;
-  margin-top: 50px;
+  margin: 20px 0;
   padding: 8px 32px;;
 }
 /* Hover status for buttons */
 .mobile-btns:hover {
-  background-color: #BBA484;
+  background-color: var(--white);
   box-shadow: 0px 10px 50px rgba(187, 164, 132, 0.5);
-  color: var(--white);
+  color: var(--black);
   transform: translateY(-7px);
 }
 /* Pressed status for buttons */
@@ -122,7 +122,7 @@ a {
   color: var(--black);
   text-decoration: underline;
 }
-.nav-links a:active {
+.nav-links a:active { /* Pressed status for links on mobile */
   background-color: var(--white);
 }
 
@@ -183,9 +183,12 @@ a {
 }
 
 /* Contact Section */
+.contact-home-section {
+  background-image: url(images/bareque4.jpeg);
+}
 .contact-home-body {
-  background-color: black;
   height: 100vh;
+  margin-top: 32px;
 }
 .contact-home-body h1 {
   margin-top: 0;

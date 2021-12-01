@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bareque Cocina</title>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="mobile.css">
+  <!-- Javascript Scripts -->
+  <script defer src="scripts.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <section style="margin: 0;">
+
+    <header class="mobile-header">
+      <div>
+        <!-- Navbar -->
+        <nav class="nav">
+          <div class="links-div">
+            <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick1();" class="menu-icons"> <i class="fas fa-bars menu-icon-1"></i>
+            </a>
+            <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick2();" class="menu-icons"> <i class="fas fa-glass-martini-alt menu-icon-2"></i>
+            </a>
+          </div>
+          <div class="nav-logo-div">
+            <a href="#"><img class="nav-logo" src="images/logo bareque.png" alt="bareque restaurant logo"></a>
+          </div>
+        </nav>
+      </div>
+      <div id="nav-links" class="nav-links">
+        <a href="#Home">Home</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Contact">Contact</a>
+        <a href="#Location">Location</a>
+        <a href="#Reservations">Reservations</a>
+      </div>
+    </header>
+    <!-- Desktop Header -->
+    <header class="desktop-header">
+      <div>
+        <!-- Navbar -->
+        <nav class="desktop-nav">
+          <div class="nav-logo-desktop-div">
+            <a href="#"><img class="desktop-nav-logo" src="images/logo bareque.png" alt="bareque restaurant logo"></a>
+          </div>
+
+        <div class="nav-links-and-icons">
+          <div id="nav-links-desktop" class="nav-links-desktop">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Menu">Menu</a>
+            <a href="#Reservations">Reservations</a>
+          </div>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Landing Section -->
+    <section id="landing-section" class="landing-section">
+      <div id="landing-body" class="landing-body">
+        <h1 class="main-headings landing-content1">Bareque Cocina</h1>
+        <img class="silverware-border-img landing-content1" src="images/silverware.png" alt="border image">
+        <p class="paragraph-text landing-text landing-content1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius, assumenda officiis, tempore delectus magni debitis expedita,
+          saepe labore veniam! Quod, ab,
+          labore.</p>
+        <!-- below div is display none by default. media query -->
+        <div class="desktop-landing-content">
+          <h1 class="main-headings">Bareque Cocina</h1>
+          <img class="silverware-border-img" src="images/silverware.png" alt="border image">
+          <h3 style="margin-bottom: 20px">statement text</h3>
+          <p class="paragraph-text landing-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius.</p>
+        </div>
+        <div class="landing-btn-div">
+          <button type="button" class="mobile-btns">Visit Us!</button>
+        </div>
+      </div>
+    </section>
+    <!-- <div class="divider-image">
+          <hr style="width: 80%;">
+    </div> -->
+    <!-- Menu Section -->
+    <section id="menu-home-section" class="menu-home-section">
+      <div class="menu-home-body">
+        <h1 class="main-headings">Nuestro Menu</h1>
+        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nulla eos dolores alias, illo quaerat modi ipsa ut perferendis, nam voluptas doloremque optio beatae! Fugiat delectus recusandae fuga eligendi
+          vitae!</p>
+        <div>
+          <button type="button" class="mobile-btns">Menu</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Culinary Story Desktop Section -->
+    <section id="culinary-desktop-section" class="culinary-desktop-section">
+      <div class="culinary-text-div">
+        <h2 class="card-headings">Discover</h2>
+        <h3 class="card-h3">Our Culinary Story</h3>
+
+        <i class="fas fa-utensils"></i>
+
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure maxime sapiente rerum veritatis totam id porro, eos, odio doloremque expedita blanditiis quisquam repellat sed! Voluptatem consectetur assumenda, qui
+          quisquam.</p>
+        <a class="card-links" href="#About-Us">About Us</a>
+      </div>
+      <img src="images/carbonnara.jpg" alt="carbonnara image">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact-mobile-section" class="contact-mobile-section">
+      <div class="contact-mobile-body">
+        <h1 class="main-headings">Contacto</h1>
+        <div class="contact-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fas fa-phone-alt"></i></a>
+          <a href="#"><i class="far fa-envelope"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reserve Desktop Slide -->
+    <section id="reserve-desktop-section" class="reserve-desktop-section">
+      <div>
+        <h2 class="card-headings">Fresh Food. Fast Service.</h2>
+        <h1>Statement Text</h1>
+        <img src="images/utensils-lightbrown.png" alt="utensils border image">
+        <button class="reserve-btn">Reserve Your Table</button>
+      </div>
+
+    </section>
+
+    <!-- Explore Menu Section Desktop -->
+    <section id="menu-desktop-section" class="menu-desktop-section">
+      <div class="exploreMenu-text-div">
+        <h2 class="card-headings">Explore</h2>
+        <h3 class="card-h3">Our Menu</h3>
+
+        <i class="fas fa-utensils"></i>
+
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure maxime sapiente rerum veritatis totam id porro, eos, odio doloremque expedita blanditiis quisquam repellat sed! Voluptatem consectetur assumenda, qui
+          quisquam.</p>
+        <a class="card-links" href="#Full-Menu">View Full Menu</a>
+      </div>
+
+      <div class="menuExplore-images-div">
+        <div class="menuImgs1">
+          <div class="menu-img-container">
+            <img style="width: 60%;" src="images/5.jpg" alt="beverages image icon">
+            <div class="text-overlay"><h4>
+              Beverages
+            </h4></div>
+          </div>
+          <div class="menu-img-container">
+            <img style="width: 65%;" src="images/4.jpg" alt="bread image icon">
+            <div class="text-overlay">
+              <h4>Side Dishes</h4>
+            </div>
+          </div>
+        </div>
+        <div class="menuImgs2">
+          <div class="menu-img-container">
+            <img style="width: 70%;" src="images/2.jpg" alt="tomato image icon">
+            <div class="text-overlay">
+              <h4>
+                Entrees
+              </h4>
+            </div>
+          </div>
+        <div class="menu-img-container">
+          <img style="width: 80%;" src="images/1.jpg" alt="berries image icon">
+        <div class="text-overlay">
+          <h4>
+            Desserts
+          </h4>
+        </div>
+        </div>
+      </div>
+        </div>
+    </section>
+
+
+    <!-- Location Section -->
+    <section id="location-mobile-section" class="location-mobile-section">
+      <div class="location-mobile-body">
+        <h1 class="main-headings">Donde encontrarnos?</h1>
+        <div>Map</div>
+      </div>
+    </section>
+    <!-- Reservations Section -->
+    <section id="reservations-mobile-section" class="reservations-mobile-section">
+      <div class="reservations-mobile-body">
+        <h1 class="main-headings">Reservations</h1>
+        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur officia, blanditiis cupiditate, laboriosam pariatur rerum nihil iste doloremque quam quod repudiandae provident et ipsum omnis, magnam quaerat
+          id eveniet.</p>
+        <div>
+          <button type="button" class="mobile-btns">Reserve</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Desktop Footer -->
+    <section id="desktop-footer" class="desktop-footer">
+      <div class="footer-div1">
+        <h3>DINE-IN</h3>
+        <div><i class="fas fa-carrot"></i></div>
+        <div><button class="reserve-btn">Reservations</button></div>
+        <h4>Restaurant Hours</h4>
+        <p>monday-friday: 8am - 5pm </p>
+        <p>
+          saturday: 8am - 10pm </p>
+        <p>
+          sunday: 12pm - 10pm</p>
+      </div>
+      <div class="footer-div2">
+          <img src="images/bareque2.jpeg" alt="Bareque Restaurant Table image">
+      </div>
+      <div class="footer-div3">
+        <h3>CONTACT US</h3>
+        <div><i class="fas fa-carrot"></i></div>
+
+        <h4>Address</h4>
+        <p>Lorem ipsum dolor</p>
+        <p>Lorem ipsum dolor</p>
+        <h4>Phone</h4>
+        <p>+0 000 000 0000</p>
+        <a href="#"><i class="fab fa-instagram ig-footer-icon"></i></a>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <section>
+      <footer id="footer" class="footer">
+        <div class="footer-logo-div">
+          <a href="#"><img class="footer-logo" src="images/logo bareque.png" alt="Bareque Cocina Footer Logo"></a>
+        </div>
+        <p>2021 Bareque Cocina. All rights reserved.</p>
+        <p>Cali - Valle del cauca - <br> Colombia</p>
+        <p>Horarios de atencion: Jueves a Domingo <br> 6:00PM - 1:00AM</p>
+      </footer>
+    </section>
+
+
+  </section>
+  <!-- Jquery Scripts  (must be at bottom)-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</body>
+
+</html>

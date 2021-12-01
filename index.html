@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,108 +12,72 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="desktop.css">
   <!-- Javascript Scripts -->
   <script defer src="scripts.js" charset="utf-8"></script>
 </head>
 
 <body>
-  <section>
-
-    <header>
-      <div>
-        <!-- Navbar -->
-        <nav class="nav">
-          <div class="links-div">
-            <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick1();" class="menu-icons"> <i class="fas fa-bars menu-icon-1"></i>
-            </a>
-            <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick2();" class="menu-icons"> <i class="fas fa-glass-martini-alt menu-icon-2"></i>
-            </a>
-          </div>
-          <div class="nav-logo-div">
-            <a href="#"><img class="nav-logo" src="images/logo bareque.png" alt="bareque restaurant logo"></a>
-          </div>
-        </nav>
+<div id="all-desktop-content">
+<header>
+  <div>
+    <!-- Navbar -->
+    <nav class="nav">
+      <div class="nav-logo-div">
+        <a href="#"><img class="nav-logo" src="images/logo bareque.png" alt="bareque restaurant logo"></a>
       </div>
+
+    <div class="nav-links-and-icons">
       <div id="nav-links" class="nav-links">
         <a href="#Home">Home</a>
+        <a href="#About">About</a>
         <a href="#Menu">Menu</a>
-        <a href="#Contact">Contact</a>
-        <a href="#Location">Location</a>
         <a href="#Reservations">Reservations</a>
       </div>
-    </header>
-    <!-- Landing Section -->
-    <section id="landing-section" class="landing-section">
-      <div id="landing-body" class="landing-body">
-        <h1 class="main-headings">Bareque Cocina</h1>
-        <img src="images/silverware.png" alt="border image">
-        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius, assumenda officiis, tempore delectus magni debitis expedita, saepe labore veniam! Quod, ab,
-          labore.</p>
-        <div class="landing-btn-div">
-          <button type="button" class="mobile-btns">Visit Us!</button>
-        </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-instagram"></i></a>
       </div>
-    </section>
-    <!-- <div class="divider-image">
-          <hr style="width: 80%;">
-    </div> -->
-    <!-- Menu Section -->
-    <section id="menu-home-section" class="menu-home-section">
-      <div class="menu-home-body">
-        <h1 class="main-headings">Nuestro Menu</h1>
-        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nulla eos dolores alias, illo quaerat modi ipsa ut perferendis, nam voluptas doloremque optio beatae! Fugiat delectus recusandae fuga eligendi
-          vitae!</p>
-        <div>
-          <button type="button" class="mobile-btns">Menu</button>
-        </div>
       </div>
-    </section>
-    <!-- Contact Section -->
-    <section id="contact-home-section" class="contact-home-section">
-      <div class="contact-home-body">
-        <h1 class="main-headings">Contacto</h1>
-        <div class="contact-icons">
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fas fa-phone-alt"></i></a>
-          <a href="#"><i class="far fa-envelope"></i></a>
-        </div>
-      </div>
-    </section>
-    <!-- Location Section -->
-    <section id="location-home-section" class="location-home-section">
-      <div class="location-home-body">
-        <h1 class="main-headings">Donde encontrarnos?</h1>
-        <div>Map</div>
-      </div>
-    </section>
-    <!-- Reservations Section -->
-    <section id="reservations-home-section" class="reservations-home-section">
-      <div class="reservations-home-body">
-        <h1 class="main-headings">Reservations</h1>
-        <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur officia, blanditiis cupiditate, laboriosam pariatur rerum nihil iste doloremque quam quod repudiandae provident et ipsum omnis, magnam quaerat
-          id eveniet.</p>
-        <div>
-          <button type="button" class="mobile-btns">Reserve</button>
-        </div>
-      </div>
-    </section>
-    <!-- Footer Section -->
-    <section>
-      <footer id="footer" class="footer">
-        <div class="footer-logo-div">
-          <a href="#"><img class="footer-logo" src="images/logo bareque.png" alt="Bareque Cocina Footer Logo"></a>
-        </div>
-        <p>2021 Bareque Cocina. All rights reserved.</p>
-        <p>Cali - Valle del cauca - <br> Colombia</p>
-        <p>Horarios de atencion: Jueves a Domingo <br> 6:00PM - 1:00AM</p>
-      </footer>
-    </section>
+    </nav>
+  </div>
+</header>
+<section id="landing-desktop-section" class="landing-desktop-section">
+<div class="landing-desktop-body">
+    <div class="landing-text">
+    <h1>Statement Text</h1>
+    <img class="silverware-border-img" src="images/silverware.png" alt="silverware border icon">
+    <h3>statement text</h3>
+    <p>short description of type of cuisine offered</p>
+  </div>
+</div>
+</section>
+<section id="culinary-desktop-section" class="culinary-desktop-section">
+  <div class="culinary-image-div">
+    <!-- <img src="images/carbonnara.jpg" alt="carbonnara image" class="culinary-image"> -->
+  </div>
+  <div class="culinary-text-div">
+    <h2>Discover</h2>
+    <h3>Our Culinary Story</h3>
+    <hr>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti dolorem, voluptatem dolore mollitia placeat, alias! Aut quia officiis beatae quae dolor non nulla, optio, veritatis tempore dolorum dignissimos soluta, explicabo?</p>
+    <a href="#About-Us"><h5>About Us</h5></a>
+  </div>
+</section>
 
 
-  </section>
-  <!-- Jquery Scripts  (must be at bottom)-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </body>
-
 </html>

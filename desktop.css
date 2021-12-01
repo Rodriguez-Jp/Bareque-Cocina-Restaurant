@@ -1,0 +1,138 @@
+:root {
+  --black: #000;
+  --goldenbrown: #5D492C;
+  --white: #fff;
+}
+body {
+font-family: Book Antiqua, serif;
+margin: 0;
+}
+h1 {
+  color: var(--white);
+  font-size: 3rem;
+  margin: 5px 0;
+}
+h2 { /* cursive text for desktop headers */
+  color: var(--goldenbrown);
+  font-family: Edwardian Script ITC, fantasy;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1px;
+  padding: 0;
+}
+h3 {
+  font-size: 1.25rem;
+  line-height: 1;
+  margin: 0;
+}
+p {
+  font-family: ;
+}
+/* Navbar */
+.nav {
+  align-items: center;
+  background-color: var(--black);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 16px 24px;
+}
+.nav-logo {
+  height: 100%;
+  width: 150px;
+}
+.nav-links {
+  /* padding between last nav link and social icons */
+  padding-right: 24px;
+}
+.nav-links a {
+  color: var(--white);
+  font-family: Book Antiqua, serif;
+  font-size: 1rem;
+  padding: 0 16px;
+  text-decoration: none;
+}
+.nav-links a:hover {
+  background-color: var(--goldenbrown);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+.nav-links-and-icons { /* div for nav links and social icons divs */
+  align-items: center;
+  display: flex;
+}
+.social-icons a {
+  color: var(--white);
+  font-size: 1.25rem;
+}
+
+/* Landing Page Desktop */
+.landing-desktop-section {
+  display: flex;
+  background-image: url(images/bareque6.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+}
+.landing-desktop-body {
+  align-content: center;
+  background-color: rgb(0,0,0, .5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+.landing-text {
+  color: var(--white);
+  display: inline-block;
+  text-align: center;
+  width: fit-content;
+}
+.silverware-border-img {
+  width: 50%;
+}
+
+/* Culinary Section */
+.culinary-desktop-section {
+  align-content: flex-end;
+  align-items: center;
+  display: flex;
+  background-image: url(images/carbonnara.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  justify-content: flex-end;
+  margin: 16px 24px;
+  position: relative;
+}
+.culinary-image-div {
+
+}
+.culinary-text-div {
+  background-color: white;
+  box-shadow: 5px 10px rgba(100,100,100, .5);
+  height: fit-content;
+  width: 300px;
+  padding: 20px 50px;
+  position: absolute;
+  right: 20px;
+  text-align: center;
+  top: 25%;
+  bottom: 20%;
+  z-index: 2;
+}
+
+/* Footer */
+.footer {
+  padding: 0 24px 24px;
+}
+.footer-logo {
+  height: 100%;
+  width: 150px;
+}
+.footer-logo-div {
+  display: flex;
+  justify-content: center;
+}

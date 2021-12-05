@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,14 +16,15 @@
   <link rel="stylesheet" href="styles.css">
   <!-- Javascript Scripts -->
   <script defer src="scripts.js" charset="utf-8"></script>
+
 </head>
 
 <body>
-  <section style="margin: 0;">
-
+  <section>
+    <!-- Mobile Header -->
     <header class="mobile-header">
       <div>
-        <!-- Navbar -->
+        <!-- Mobile Navbar -->
         <nav class="nav">
           <div class="links-div">
             <a href="#" onmouseover="mobileMenuMouseover();" onmouseleave="mobileMenuMouseleave();" onclick="mobileMenuClick1();" class="menu-icons"> <i class="fas fa-bars menu-icon-1"></i>
@@ -45,17 +45,18 @@
         <a href="#Reservations">Reservations</a>
       </div>
     </header>
+
     <!-- Desktop Header -->
     <header class="desktop-header">
       <div>
-        <!-- Navbar -->
+        <!-- Desktop Navbar -->
         <nav class="desktop-nav">
-          <div class="nav-logo-desktop-div">
+          <div>
             <a href="#"><img class="desktop-nav-logo" src="images/logo bareque.png" alt="bareque restaurant logo"></a>
           </div>
 
         <div class="nav-links-and-icons">
-          <div id="nav-links-desktop" class="nav-links-desktop">
+          <div class="nav-links-desktop">
             <a href="#Home">Home</a>
             <a href="#About">About</a>
             <a href="#Menu">Menu</a>
@@ -68,33 +69,34 @@
         </nav>
       </div>
     </header>
-    <!-- Landing Section -->
+
+    <!-- Landing Mobile Section -->
     <section id="landing-section" class="landing-section">
-      <div id="landing-body" class="landing-body">
-        <h1 class="main-headings landing-content1">Bareque Cocina</h1>
+      <div class="landing-body">
+        <h1 class="landing-content1">Bareque Cocina</h1>
         <img class="silverware-border-img landing-content1" src="images/silverware.png" alt="border image">
-        <p class="paragraph-text landing-text landing-content1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius, assumenda officiis, tempore delectus magni debitis expedita,
+        <p class="landing-pText landing-content1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius, assumenda officiis, tempore delectus magni debitis expedita,
           saepe labore veniam! Quod, ab,
           labore.</p>
+
+          <!-- Landing Desktop Section -->
         <!-- below div is display none by default. media query -->
         <div class="desktop-landing-content">
-          <h1 class="main-headings">Bareque Cocina</h1>
+          <h1>Bareque Cocina</h1>
           <img class="silverware-border-img" src="images/silverware.png" alt="border image">
           <h3 style="margin-bottom: 20px">statement text</h3>
-          <p class="paragraph-text landing-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius.</p>
+          <p class="landing-pText landing-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius.</p>
         </div>
         <div class="landing-btn-div">
           <button type="button" class="mobile-btns">Visit Us!</button>
         </div>
       </div>
     </section>
-    <!-- <div class="divider-image">
-          <hr style="width: 80%;">
-    </div> -->
+
     <!-- Menu Section -->
     <section id="menu-home-section" class="menu-home-section">
       <div class="menu-home-body">
-        <h1 class="main-headings">Nuestro Menu</h1>
+        <h1>Nuestro Menu</h1>
         <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nulla eos dolores alias, illo quaerat modi ipsa ut perferendis, nam voluptas doloremque optio beatae! Fugiat delectus recusandae fuga eligendi
           vitae!</p>
         <div>
@@ -121,7 +123,7 @@
     <!-- Contact Section -->
     <section id="contact-mobile-section" class="contact-mobile-section">
       <div class="contact-mobile-body">
-        <h1 class="main-headings">Contacto</h1>
+        <h1>Contacto</h1>
         <div class="contact-icons">
           <a href="#"><i class="fab fa-instagram"></i></a>
           <a href="#"><i class="fas fa-phone-alt"></i></a>
@@ -194,14 +196,14 @@
     <!-- Location Section -->
     <section id="location-mobile-section" class="location-mobile-section">
       <div class="location-mobile-body">
-        <h1 class="main-headings">Donde encontrarnos?</h1>
+        <h1>Donde encontrarnos?</h1>
         <div>Map</div>
       </div>
     </section>
     <!-- Reservations Section -->
     <section id="reservations-mobile-section" class="reservations-mobile-section">
       <div class="reservations-mobile-body">
-        <h1 class="main-headings">Reservations</h1>
+        <h1>Reservations</h1>
         <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam tenetur officia, blanditiis cupiditate, laboriosam pariatur rerum nihil iste doloremque quam quod repudiandae provident et ipsum omnis, magnam quaerat
           id eveniet.</p>
         <div>
@@ -239,7 +241,10 @@
         <a href="#"><i class="fab fa-instagram ig-footer-icon"></i></a>
       </div>
     </section>
-    <!-- Footer Section -->
+
+
+
+    <!-- Mobile Footer Section -->
     <section>
       <footer id="footer" class="footer">
         <div class="footer-logo-div">

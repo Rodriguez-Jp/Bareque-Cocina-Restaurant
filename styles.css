@@ -19,6 +19,10 @@ a {
 h1 {
   color: var(--white);
   font-size: 3rem;
+  font-family: Book Antiqua, serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  letter-spacing: 2px;
   margin: 5px 0;
 }
 h2 {
@@ -39,17 +43,14 @@ h6 {
   display: inline-block;
 }
 /*Repeated Color Stylings */
-.divider-image,
 .menu-icons,
 .nav,
 .nav-links,
 .footer {
   background-color: var(--black);
 }
-.main-headings,
 .menu-icon-1,
 .menu-icon-2,
-.paragraph-text,
 .footer {
   color: var(--white);
 }
@@ -66,18 +67,27 @@ h6 {
   background-size: cover;
   height: 100vh;
 }
-
-/* Typography */
-.main-headings  { /* h1 headings */
+/* Card Styling for Desktop Cards (text, headings, and page link) */
+.card-links {
+  color: var(--lightbrown);
+  font-size: .8rem;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.card-h3 {
+  color: var(--black);
   font-family: Book Antiqua, serif;
-  font-size: 3rem;
-  font-weight: lighter;
-  letter-spacing: 2px;
+  margin-bottom: 20px;
 }
-.paragraph-text {
-  font-size: 1rem;
-  line-height: 1.5rem;
+.card-headings {
+  font-weight: 200;
+  margin: 20px 0 20px;
 }
+.card-text {
+  font-size: 14px;
+  padding: 5px 10px 0;
+}
+
 /* Buttons */
 .mobile-btns {
   border-radius: 10px;
@@ -101,16 +111,13 @@ h6 {
   background-color: var(--lightbrown);
   color: var(--white);
 }
-/* Random Styling */
-.divider-image {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+
+/* Social Icons */
+.ig-footer-icon {
+  font-size: 1.25rem;
+  color: white;
 }
-.divider-image img {
-  text-align: center;
-  width: 80%;
-}
+
 /* Font Awesome Icons */
 .menu-icons { /* icons used for dropdown mobile menu */
   display: block;
@@ -123,7 +130,7 @@ h6 {
   font-size: 2rem;
 }
 
-/* Navbar */
+/* Mobile Navbar */
 .nav {
   padding: 5px 20px;
   position: relative;
@@ -152,22 +159,19 @@ h6 {
   color: var(--black);
   text-decoration: underline;
 }
-.nav-links a:active { /* Pressed status for links on mobile */
+.nav-links a:active {
   background-color: var(--white);
 }
-
-.links-div { /* Div for Hamburger Menu Links */
+/* Div for Hamburger Menu Links */
+.links-div {
   /* this is to keep it center aligned with logo */
   position: absolute;
   text-align: right;
   top: 40px;
   right: 20px;
 }
-/* Desktop Header */
-.desktop-header {
-  display: none;
-}
-/* Navbar */
+
+/* Desktop Navbar */
 .desktop-nav {
   align-items: center;
   background-color: var(--black);
@@ -205,21 +209,12 @@ h6 {
   font-size: 1.25rem;
 }
 
-/* Footer */
-.footer {
-  padding: 24px;
-}
-.footer-logo {
-  height: auto;
-  width: 120px;
-  margin-bottom: 20px;
-}
-.footer-logo-div {
-  display: flex;
-  justify-content: center;
+/* Desktop Header */
+.desktop-header {
+  display: none;
 }
 
-/* Landing Page */
+/* Mobile Landing Page */
 .landing-section {
   background-image: url(images/bareque1.jpeg);
 }
@@ -239,8 +234,10 @@ h6 {
 .landing-body h1 {
   margin: 0;
 }
-.landing-body p {
+.landing-pText  {
   color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .landing-cta-btn {
   border-radius: 20px;
@@ -249,17 +246,18 @@ h6 {
   margin-top: 20px;
   padding: 8px 32px;
 }
+
+/* Desktop Landing Page */
 .desktop-landing-content {
   display: none;
 }
 
-/* Menu Section */
+/* Mobile Menu Section */
 .menu-home-section {
   background-image: url(images/carbonnara.jpg);
 }
 
-/* Culinary Story Section - Desktop Menu */
-
+/* Desktop Culinary Story Section */
 .culinary-desktop-section {
   margin: 20px;
   position: relative;
@@ -281,26 +279,8 @@ h6 {
   width: 40%;
   padding: 16px;
 }
-.card-links {
-  color: var(--lightbrown);
-  font-size: .8rem;
-  margin-bottom: 10px;
-  text-decoration: underline;
-}
-.card-h3 {
-  color: var(--black);
-  font-family: Book Antiqua, serif;
-  margin-bottom: 20px;
-}
-.card-headings {
-  font-weight: 200;
-  margin: 20px 0 20px;
-}
-.card-text {
-  font-size: 14px;
-  padding: 5px 10px 0;
-}
-/* Contact Section */
+
+/* Mobile Contact Section */
 .contact-mobile-section {
   background-image: url(images/bareque4.jpeg);
 }
@@ -329,7 +309,7 @@ h6 {
   margin: 20px 0 40px;
 }
 
-/* Reservations */
+/* Mobile Reservations Section */
 .reservations-mobile-section {
   background-image: url(images/bareque2.jpeg);
 }
@@ -364,7 +344,7 @@ h6 {
   border: none;
 }
 
-/* Explore Menu Section */
+/* Desktop Explore Menu Section */
 .menu-desktop-section{
   align-items: center;
   display: none;
@@ -415,6 +395,20 @@ h6 {
   align-items: center;
 }
 
+/* Mobile Footer */
+.footer {
+  padding: 24px;
+}
+.footer-logo {
+  height: auto;
+  width: 120px;
+  margin-bottom: 20px;
+}
+.footer-logo-div {
+  display: flex;
+  justify-content: center;
+}
+
 /*  Desktop Footer */
 .desktop-footer {
   background-color: var(--black);
@@ -445,11 +439,6 @@ h6 {
   text-align: center;
   width: 100%;
 }
-/* Social Icons */
-.ig-footer-icon {
-  font-size: 1.25rem;
-  color: white;
-}
 
 /* Media Queries */
 @media only screen and (min-width: 600px) {
@@ -472,13 +461,6 @@ h6 {
     height: 100vh;
     width: 100%;
   }
-  .landing-text {
-    color: var(--white);
-    display: inline-block;
-    text-align: center;
-    padding: 0 20px;
-    width: fit-content;
-  }
   .silverware-border-img {
     margin: 10px 0;
     width: 60%;
@@ -495,10 +477,9 @@ h6 {
   .landing-btn-div button {
     display: none;
   }
-  /* all paragrapht text on page */
-  .paragraph-text {
-    width: 60%;
-    /* centering text, p is inline */
+  /* all paragraph text on page */
+  .landing-pText {
+    width: 60%; /* centering text, p is inline */
     margin: 0 auto;
   }
   /* the mobile section of some sections display none in desktop */

@@ -12,32 +12,20 @@ body {
   margin: 0;
 }
 a {
-  font-family: Book Antiqua, serif;
+  font-family: Merriweather, serif;
   font-size: 1rem;
   text-decoration: none;
 }
+p {
+  font-family: Merriweather, serif;
+}
 h1 {
   color: var(--white);
-  font-size: 3rem;
   font-family: Book Antiqua, serif;
   font-size: 3rem;
   font-weight: lighter;
   letter-spacing: 2px;
   margin: 5px 0;
-}
-h2 {
-  color: var(--lightbrown);
-  font-family: Edwardian Script ITC, fantasy;
-  font-size: 2rem;
-  letter-spacing: 2px;
-  line-height: 1px;
-  padding: 0;
-}
-h3 {
-  color: var(--white);
-  font-size: 1.25rem;
-  line-height: 1px;
-  margin: 0;
 }
 h6 {
   display: inline-block;
@@ -54,12 +42,13 @@ h6 {
 .footer {
   color: var(--white);
 }
-.fa-utensils {
-  color: var(--lightbrown);
+.utensils-border-icon {
+    color: var(--lightbrown);
 }
+
 /* Repeated Structure Styling */
 .landing-section,
-.menu-home-section,
+.mobile-menu-section,
 .contact-mobile-section,
 .location-mobile-section,
 .reservations-mobile-section {
@@ -77,15 +66,30 @@ h6 {
 .card-h3 {
   color: var(--black);
   font-family: Book Antiqua, serif;
+  font-size: 1.5rem;
+  line-height: .5px;
   margin-bottom: 20px;
 }
 .card-headings {
   font-weight: 200;
   margin: 20px 0 20px;
+  color: var(--lightbrown);
+  font-family: Edwardian Script ITC, fantasy;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1px;
+  padding: 0;
 }
 .card-text {
   font-size: 14px;
   padding: 5px 10px 0;
+}
+.cards-borderDiv {
+  background-color: var(--lightbrown);
+  display: inline;
+  margin: 0 5px;
+  height: 2px;
+  width: 25%;
 }
 
 /* Buttons */
@@ -196,9 +200,7 @@ h6 {
   text-decoration: none;
 }
 .nav-links-desktop a:hover {
-  background-color: var(--goldenbrown);
-  color: var(--white);
-  border: 1px solid var(--white);
+  border: 1px solid var(--lightbrown);
 }
 .nav-links-and-icons { /* div for nav links and social icons divs */
   align-items: center;
@@ -207,6 +209,9 @@ h6 {
 .social-icons a {
   color: var(--white);
   font-size: 1.25rem;
+}
+.social-icons a:hover {
+  color: var(--lightbrown);
 }
 
 /* Desktop Header */
@@ -219,7 +224,7 @@ h6 {
   background-image: url(images/bareque1.jpeg);
 }
 .landing-body,
-.menu-home-body,
+.mobile-menu-body,
 .contact-mobile-body,
 .location-mobile-body,
 .reservations-mobile-body {
@@ -232,7 +237,7 @@ h6 {
   text-align: center;
 }
 .landing-body h1 {
-  margin: 0;
+  margin: 20px 0;
 }
 .landing-pText  {
   color: var(--white);
@@ -246,14 +251,39 @@ h6 {
   margin-top: 20px;
   padding: 8px 32px;
 }
-
+/* the utensils border icon */
+.landing-section i {
+  font-size: 1.5rem !important;
+  margin: 10px 0;
+}
+.borderDiv {
+  width: 40%;
+  height: 2px;
+  background-color: var(--lightbrown);
+  display: inline;
+}
+.border-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 /* Desktop Landing Page */
 .desktop-landing-content {
   display: none;
 }
-
+.landing-statement-text {
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 1px;
+  margin: 20px 0;
+}
+.landing-pText {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 40px auto;
+}
 /* Mobile Menu Section */
-.menu-home-section {
+.mobile-menu-section {
   background-image: url(images/carbonnara.jpg);
 }
 
@@ -461,9 +491,21 @@ h6 {
     height: 100vh;
     width: 100%;
   }
-  .silverware-border-img {
-    margin: 10px 0;
-    width: 60%;
+  /* the border icon with silverware */
+  .landing-section i {
+    color: var(--white);
+    font-size: 2rem !important;
+  }
+  .landing-section .borderDiv {
+    background-color: var(--white);
+    margin: 10px 20px;
+    width: 20%;
+  }
+  /* the div surrounding the border icon */
+  .border-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   /* hiding the mobile landing content */
   .desktop-landing-content {
@@ -480,10 +522,9 @@ h6 {
   /* all paragraph text on page */
   .landing-pText {
     width: 60%; /* centering text, p is inline */
-    margin: 0 auto;
   }
   /* the mobile section of some sections display none in desktop */
-  .menu-home-section,
+  .mobile-menu-section,
   .contact-mobile-section,
   .location-mobile-section,
   .reservations-mobile-section,

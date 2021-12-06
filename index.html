@@ -11,6 +11,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="styles.css">
@@ -70,22 +73,30 @@
       </div>
     </header>
 
-    <!-- Landing Mobile Section -->
+    <!-- Mobile Landing Section -->
     <section id="landing-section" class="landing-section">
       <div class="landing-body">
         <h1 class="landing-content1">Bareque Cocina</h1>
-        <img class="silverware-border-img landing-content1" src="images/silverware.png" alt="border image">
+
+    <div class="border-content landing-content1">
+        <div class="borderDiv"></div><i class="fas fa-utensils utensils-border-icon"></i><div class="borderDiv"></div>
+    </div>
+
+
         <p class="landing-pText landing-content1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius, assumenda officiis, tempore delectus magni debitis expedita,
           saepe labore veniam! Quod, ab,
           labore.</p>
 
-          <!-- Landing Desktop Section -->
+        <!-- Landing Desktop Section -->
+
         <!-- below div is display none by default. media query -->
         <div class="desktop-landing-content">
           <h1>Bareque Cocina</h1>
-          <img class="silverware-border-img" src="images/silverware.png" alt="border image">
-          <h3 style="margin-bottom: 20px">statement text</h3>
-          <p class="landing-pText landing-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius.</p>
+          <div class="border-content">
+              <div class="borderDiv"></div><i class="fas fa-utensils utensils-border-icon"></i> <div class="borderDiv"></div>
+          </div>
+          <h2 class="landing-statement-text">statement text</h2>
+          <p class="landing-pText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sunt ex natus consectetur corrupti soluta rerum eius.</p>
         </div>
         <div class="landing-btn-div">
           <button type="button" class="mobile-btns">Visit Us!</button>
@@ -93,9 +104,9 @@
       </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu-home-section" class="menu-home-section">
-      <div class="menu-home-body">
+    <!-- Mobile Menu Section (homepage) -->
+    <section id="mobile-menu-section" class="mobile-menu-section">
+      <div class="mobile-menu-body">
         <h1>Nuestro Menu</h1>
         <p class="paragraph-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates, nulla eos dolores alias, illo quaerat modi ipsa ut perferendis, nam voluptas doloremque optio beatae! Fugiat delectus recusandae fuga eligendi
           vitae!</p>
@@ -111,7 +122,9 @@
         <h2 class="card-headings">Discover</h2>
         <h3 class="card-h3">Our Culinary Story</h3>
 
-        <i class="fas fa-utensils"></i>
+        <div class="border-content">
+            <div class="cards-borderDiv"></div><i class="fas fa-utensils utensils-border-icon"></i><div class="cards-borderDiv"></div>
+        </div>
 
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure maxime sapiente rerum veritatis totam id porro, eos, odio doloremque expedita blanditiis quisquam repellat sed! Voluptatem consectetur assumenda, qui
           quisquam.</p>
@@ -149,7 +162,9 @@
         <h2 class="card-headings">Explore</h2>
         <h3 class="card-h3">Our Menu</h3>
 
-        <i class="fas fa-utensils"></i>
+        <div class="border-content">
+            <div class="cards-borderDiv"></div><i class="fas fa-utensils utensils-border-icon"></i><div class="cards-borderDiv"></div>
+        </div>
 
         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit iure maxime sapiente rerum veritatis totam id porro, eos, odio doloremque expedita blanditiis quisquam repellat sed! Voluptatem consectetur assumenda, qui
           quisquam.</p>

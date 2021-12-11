@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+  background-color: #000;
+  margin: 0 40px;
+}
+button:hover {
+  cursor: pointer;
+}
+p {
+  font-family: 'Oswald', serif;
+  font-weight: 300;
+}
+
+/* Nav bar */
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: #121212;
+    justify-content: center;
+
+}
+
+.logo-container{
+    background-color: #000;
+    border-bottom: 5px solid #fff;
+    display: flex;
+    justify-content: space-between;
+    flex: 2;
+}
+
+
+.logo{
+    width: 7rem;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(142deg) brightness(105%) contrast(100%);
+    margin-left: 40px;
+}
+
+.toggle-container{
+    background-color: #000;
+    border-bottom: 5px solid #fff;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.toggle-container i{
+    color: #FFFFFF;
+    font-size: 2.25em;
+}
+.toggle-container i:hover {
+  color: #bba484;
+  cursor: pointer;
+}
+
+.nav-bar{
+    width: 100%;
+    background-color: #121212;
+    z-index: -10;
+    transition: opacity 600ms, transform 500ms;
+}
+
+.nav-bar li{
+    list-style-type: none;
+    text-align: center;
+    padding: 1em;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.filter-btn2{
+    list-style-type: none;
+    text-align: center;
+    padding: 1em;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.hidden {
+    position: fixed;
+    top: 80px;
+    opacity: 0;
+    transform: translateY(-250px);
+}
+
+.show{
+    transform: translateY(57px);
+    position: fixed;
+    top: 30px;
+    left: 0;
+    z-index: 10;
+    opacity: 1;
+}
+
+
+
+
+.nav-bar li:hover{
+    background-color: #fff;
+    color: #000;
+}
+.nav-bar a :hover {
+  color: #000;
+}
+
+/* Nav bar end*/
+
+
+/* Content */
+
+
+.filter-options{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.filter-btn{
+    font-family: 'Merriweather', serif;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    background-color: #000;
+    color: #FFFFFF;
+    margin: 0 2px;
+    padding: 4px 12px;
+    font-size: 1em;
+}
+.filter-btn:hover {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.filter-btn:active {
+  background-color: rgba(255, 255, 255, .2);
+  color: #fff;
+}
+
+.menu-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-img-container img{
+    width: 100%;
+    height: 100%;
+    border-bottom: 5px solid #fff ;
+}
+
+.menu-img-container img{
+    height: 18rem;
+    width: 100%;
+}
+
+.category-text{
+    background-color: rgba(255, 255, 255, 1);
+    padding: 0.3em;
+    margin: 30px 20px 0px 20px;
+    text-align: center;
+    color: #000;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+
+.item-info{
+    background-color: rgba(255, 255, 255, .9);
+    border: 2px solid #fff;
+    border-radius: 4px;
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.division{
+    margin: 14px auto;
+    width: 80%;
+    border: solid 2px #fff;
+    display: none;
+}
+.item-description,
+.item-title,
+.item-price {
+  color: #000;
+}
+
+.item-title{
+    font-size: 1.7rem;
+    padding: 10px 20px 5px;
+}
+
+.item-description{
+    font-size: 1.2rem;
+    padding: 2px 20px;
+}
+
+.item-price{
+    padding: 7px 20px 7px;
+    font-family: 'Book Antiqua', serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.food-sections{
+    margin-top: 40px;
+    margin-left: 1em;
+    width: fit-content;
+    text-align: justify;
+    color: #fff;
+    font-family: edwardian script itc;
+    font-size: 1rem;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    display: none;
+}
+
+.to-top-btn{
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: solid 2px #000;
+    border-radius: 50%;
+    transition: transform 400ms;
+}
+.to-top-btn:hover {
+  border: solid 2px #bba484;
+  cursor: pointer;
+}
+
+.to-top-btn i{
+    font-size: 1.2em;
+    color: #000;
+}
+.to-top-btn i:hover {
+  color: #bba484;
+}
+
+.show-to-top {
+    transform: translateX(0px);
+}
+
+.hide-to-top {
+    transform: translateX(100px);
+}

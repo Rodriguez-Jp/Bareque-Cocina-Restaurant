@@ -1,0 +1,456 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* scroll-behavior: smooth; */
+    font-family: sans-serif;
+}
+
+.whole-container{
+    position: relative;
+}
+.whole-container::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url(./Images/bg.svg);
+    filter: blur(0.7px);
+    z-index: -10;
+  }
+
+/* Nav bar */
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    background-color: #121212;
+    justify-content: center;
+    z-index: 20;
+
+}
+
+.logo{
+    width: 7rem;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(142deg) brightness(105%) contrast(100%);
+    
+}
+
+.toggle-container{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    margin-right: 1.5em;
+    align-items: center;
+}
+
+.toggle-container i{
+    color: #FFFFFF;
+    font-size: 2.5em;
+}
+
+.nav-bar{
+    width: 50%;
+    height: 100%;
+    background-color: rgba(18, 18, 18, 0.96);
+    z-index: -10;
+    transition: transform 1s;
+}
+
+.nav-bar li{
+    list-style-type: none;
+    text-align:left;
+    padding: 2em;
+    color: #FFF;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-bar li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-bar-btn{
+    
+    list-style-type: none;
+    text-align: center;
+    padding: 1em;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.hidden {
+    position: fixed;
+    top: 91px;
+    left: 0;
+    transform: translateX(-32rem);
+    transition: transform 0.5s;
+    z-index: 10;
+}
+
+.show{
+    transform: translateX(0px);
+    position: fixed;
+    top: 91px;
+    left: 0;
+    z-index: 10;
+}
+
+
+
+
+.nav-bar li:hover{
+    transform: scale(1.07);
+}
+
+/* Nav bar end*/
+
+
+/* Content */
+
+
+.filter-options{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 120px;
+}
+
+.filter-btn{
+    font-family: 'Book Antiqua', serif;
+    border: none;
+    border-radius: 4px;
+    background-color: #6B4A30;
+    color: #FFFFFF;
+    padding: 0.6em;
+    font-size: 0.85em;
+    transition: background 700ms,  transform 200ms;
+    cursor: pointer;
+}
+
+.menu-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.1);
+    transition: all 0.6s ease-in-out;
+    z-index: -10;
+}
+
+.active{
+    opacity: 1;
+    transform: scale(1);
+
+}
+
+
+.menu-img-container img{
+    object-fit:contain;
+    width: 100%;
+    height: 18rem;
+    border-bottom: 3px solid #6B4A30 ;
+}
+
+.category-text{
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px #6B4A30;
+    padding: 0.3em;
+    margin: 30px 20px 0px 20px;
+    text-align: center;
+    color: #6B4A30;
+    font-size: 1.5rem;
+}
+
+
+.item-info{
+    background-color: rgba(255, 255, 255, 0.9) ;
+    border: solid 3px #6B4A30;
+    margin: 30px auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.division{
+    margin: 14px auto;
+    width: 80%;
+    border: solid 2px #6B4A30;
+}
+
+.item-title{
+    padding: 2px;
+    color: #6B4A30;
+    font-size: 1.7rem;
+}
+
+.item-description{
+    padding: 2px;
+    font-size: 1.2rem;
+    color: #6B4A30;
+}
+
+.item-price{
+    padding: 7px 2px 2px 2px;
+    font-size: 1.3rem;
+    color: #6B4A30;
+    font-weight: 700;
+}
+
+.food-sections{
+    
+    margin: 40px 0px 0px 1em;
+    width: fit-content;
+    text-align: justify;
+    color: #6B4A30;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 2px #6B4A30;
+    padding: 4px;
+}
+
+.to-top-btn{
+    display: flex;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border: solid 2px #6B4A30;
+    border-radius: 50%;
+    transition: transform 400ms;
+    cursor: pointer;
+}
+
+.to-top-btn:hover{
+    transform: scale(1.1);
+}
+
+.to-top-btn i{
+    font-size: 1.2em;
+    color: #6B4A30;
+}
+
+.show-to-top {
+    transform: translateX(0px);
+}
+
+.hide-to-top {
+    transform: translateX(200px);
+}
+
+/* Footer */
+
+footer{
+    background-color: #000;
+    margin-top: 3em;
+}
+
+.footer-logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo img{
+    width: 10rem;
+    filter: invert(100%) sepia(0%) saturate(2%) hue-rotate(142deg) brightness(105%) contrast(100%);
+}
+
+.footer-info p{
+    padding: 1em;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.social-media{
+    color: #FFF;
+    padding: 1em;
+}
+
+.social-media h2{
+    text-align: center;
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.social-icons i{
+    cursor: pointer;
+    font-size: 2em;
+    margin: 1em;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.social-icons a:active{
+    color: #FFF;
+}
+
+
+/* Media queries for tablet version */
+
+@media (min-width:600px){
+    .carnes-section, 
+    .panne-cooks-section,
+    .pasta-section, 
+    .bebidas-section,
+    .cervezas-section,
+    .cocteles-autor-section,
+    .cocteles-clasicos-section,
+    .postres-section, 
+    .entradas-section{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+        grid-template-rows: auto;
+        
+        }
+    .item-info{
+        margin: 20px;
+    }
+
+    .filter-btn{
+        font-size: 1.3em;
+        padding: 10px;
+    }
+
+    .toggle-container{
+        left: 40px;
+    }
+}
+
+/* Media queries for desktop version */
+
+@media (min-width: 1025px) {
+
+    .whole-container{
+        padding: 3em;
+    }
+    
+    .footer-info{
+        margin-left: 3em;
+    }
+
+    .hidden{
+        position: fixed;
+        z-index: 10;
+        background-color: transparent;
+        top: 0px;
+        left: 18em;
+        height: fit-content;
+        transform: translateY(0px);
+        z-index: 20;
+        width: 80%;
+    }
+
+    .logo-container{
+        width: 100%;
+        display: flex;
+        justify-content:flex-start;
+        margin-left: 8em;
+    }
+
+    .logo{
+        position: static;
+    }
+
+    .nav-bar ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .topnav{
+        display: flex;
+    }
+
+    .toggle-container{
+        display: none;
+    }
+
+    .filter-btn{
+        margin-top: 0.5em;
+        font-size: 1.5em;
+    }
+
+    .carnes-section, 
+    .panne-cooks-section,
+    .pasta-section, 
+    .bebidas-section,
+    .cervezas-section,
+    .cocteles-autor-section,
+    .cocteles-clasicos-section,
+    .postres-section, 
+    .entradas-section{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: 1fr;
+        grid-template-rows: auto;
+        
+        }
+
+    .filter-btn:hover{
+        transform: scale(1.05);
+        background-color: rgb(116, 89, 66);
+
+    }
+
+    .nav-bar-btn{
+        font-size: 1.25em;
+    }
+
+    .home-btn{
+    transition: transform 200ms;
+    }
+
+    .category-text{
+        font-size: 2.2em;
+        border: solid 5px #6B4A30;
+    }
+
+    .food-sections{
+        font-size: 2em;
+        border: solid 5px #6B4A30;
+
+    }
+    .division{
+        background-color: #6B4A30;
+    }
+
+    .logo{
+        width: 8rem;
+    }
+
+    .to-top-btn{
+        width: 80px;
+        height: 80px;
+    }
+
+    .to-top-btn i{
+        font-size: 2em;
+    }
+}
+

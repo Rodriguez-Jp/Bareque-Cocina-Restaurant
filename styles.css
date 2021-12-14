@@ -13,11 +13,11 @@ body {
 }
 a {
   font-family: Merriweather, serif;
-  font-size: 1rem;
+  font-size: 1.75rem;
   text-decoration: none;
 }
 p {
-  font-family: Merriweather, serif;
+  font-family: 'Oswald', serif;
 }
 h1 {
   color: var(--white);
@@ -55,6 +55,9 @@ h6 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+}
+.paragraph-text {
+  color: var(--white);
 }
 /* Card Styling for Desktop Cards (text, headings, and page link) */
 .card-links {
@@ -136,7 +139,7 @@ h6 {
 
 /* Mobile Navbar */
 .nav {
-  padding: 5px 20px;
+  padding: 10px 20px;
   position: relative;
 }
 .nav-logo {
@@ -257,7 +260,7 @@ h6 {
   margin: 10px 0;
 }
 .borderDiv {
-  width: 40%;
+  width: 30%;
   height: 2px;
   background-color: var(--lightbrown);
   display: inline;
@@ -455,21 +458,37 @@ h6 {
 .desktop-footer i {
   margin: 10px 0;
 }
-/* desktop footer image */
-.footer-div2 img  {
-  height: 60vh;
-  background-color: rgba(100, 100, 100, .5);
+.desktop-footer-logo  {
+  background-color: var(--black);
+  height: 100%;
+  width: 150px;
+  padding: 20px 0;
+}
+.footer-socials {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
 }
 .footer-div1,
+.footer-div2,
 .footer-div3 {
   background-color: var(--black);
-  height: 60vh;
+  height: 30vh;
   color: var(--white);
   padding: 10px 20px;
   text-align: center;
   width: 100%;
 }
-
+/* Desktop Footer - Reservations link */
+.desktop-reservation-link {
+  background-color: var(--black);
+  padding: 20px 0 50px;
+  text-align: center;
+}
+.desktop-reservation-link a {
+  color: var(--white);
+  font-size: 1rem;
+}
 /* Media Queries */
 @media only screen and (min-width: 600px) {
   body {
@@ -489,12 +508,11 @@ h6 {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 100%;
   }
   /* the border icon with silverware */
   .landing-section i {
     color: var(--white);
-    font-size: 2rem !important;
+    font-size: 1.5rem !important;
   }
   .landing-section .borderDiv {
     background-color: var(--white);
@@ -555,5 +573,43 @@ h6 {
   }
   .silverware-border-img {
     width: 30%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .desktop-landing-content {
+    display: flex;
+    align-items: center;
+  }
+  .desktop-landing-content h1 {
+    padding: 0;
+    margin: 0;
+  }
+  .landing-statement-text {
+    margin-left: 80px;
+  }
+  .landing-body {
+    width: auto;
+
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .landing-pText {
+    margin: 0;
+    width: 50%;
+    padding: 16px 0;
+  }
+  .border-content {
+    justify-content: flex-start;
+    padding: 10px 0;
+    margin-left: 20px;
+  }
+  .borderDiv {
+    margin: 0 !important;
+    width: 15% !important;
+  }
+  .landing-section i {
+    font-size: 1.25rem !important;
+    margin: 0 20px;
   }
 }

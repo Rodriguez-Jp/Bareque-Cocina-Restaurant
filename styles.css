@@ -12,53 +12,43 @@ body {
   margin: 0;
 }
 a {
-  font-family: Book Antiqua, serif;
-  font-size: 1rem;
+  font-family: Merriweather, serif;
+  font-size: 1.75rem;
   text-decoration: none;
+}
+p {
+  font-family: 'Oswald', serif;
 }
 h1 {
   color: var(--white);
+  font-family: Book Antiqua, serif;
   font-size: 3rem;
-  margin: 5px 0;
-}
-h2 {
-  color: var(--lightbrown);
-  font-family: Edwardian Script ITC, fantasy;
-  font-size: 2rem;
+  font-weight: lighter;
   letter-spacing: 2px;
-  line-height: 1px;
-  padding: 0;
-}
-h3 {
-  color: var(--white);
-  font-size: 1.25rem;
-  line-height: 1px;
-  margin: 0;
+  margin: 5px 0;
 }
 h6 {
   display: inline-block;
 }
 /*Repeated Color Stylings */
-.divider-image,
 .menu-icons,
 .nav,
 .nav-links,
 .footer {
   background-color: var(--black);
 }
-.main-headings,
 .menu-icon-1,
 .menu-icon-2,
-.paragraph-text,
 .footer {
   color: var(--white);
 }
-.fa-utensils {
-  color: var(--lightbrown);
+.utensils-border-icon {
+    color: var(--lightbrown);
 }
+
 /* Repeated Structure Styling */
 .landing-section,
-.menu-home-section,
+.mobile-menu-section,
 .contact-mobile-section,
 .location-mobile-section,
 .reservations-mobile-section {
@@ -66,18 +56,45 @@ h6 {
   background-size: cover;
   height: 100vh;
 }
-
-/* Typography */
-.main-headings  { /* h1 headings */
-  font-family: Book Antiqua, serif;
-  font-size: 3rem;
-  font-weight: lighter;
-  letter-spacing: 2px;
-}
 .paragraph-text {
-  font-size: 1rem;
-  line-height: 1.5rem;
+  color: var(--white);
 }
+/* Card Styling for Desktop Cards (text, headings, and page link) */
+.card-links {
+  color: var(--lightbrown);
+  font-size: .8rem;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.card-h3 {
+  color: var(--black);
+  font-family: Book Antiqua, serif;
+  font-size: 1.5rem;
+  line-height: .5px;
+  margin-bottom: 20px;
+}
+.card-headings {
+  font-weight: 200;
+  margin: 20px 0 20px;
+  color: var(--lightbrown);
+  font-family: Edwardian Script ITC, fantasy;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1px;
+  padding: 0;
+}
+.card-text {
+  font-size: 14px;
+  padding: 5px 10px 0;
+}
+.cards-borderDiv {
+  background-color: var(--lightbrown);
+  display: inline;
+  margin: 0 5px;
+  height: 2px;
+  width: 25%;
+}
+
 /* Buttons */
 .mobile-btns {
   border-radius: 10px;
@@ -101,16 +118,13 @@ h6 {
   background-color: var(--lightbrown);
   color: var(--white);
 }
-/* Random Styling */
-.divider-image {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+
+/* Social Icons */
+.ig-footer-icon {
+  font-size: 1.25rem;
+  color: white;
 }
-.divider-image img {
-  text-align: center;
-  width: 80%;
-}
+
 /* Font Awesome Icons */
 .menu-icons { /* icons used for dropdown mobile menu */
   display: block;
@@ -123,9 +137,9 @@ h6 {
   font-size: 2rem;
 }
 
-/* Navbar */
+/* Mobile Navbar */
 .nav {
-  padding: 5px 20px;
+  padding: 10px 20px;
   position: relative;
 }
 .nav-logo {
@@ -152,22 +166,19 @@ h6 {
   color: var(--black);
   text-decoration: underline;
 }
-.nav-links a:active { /* Pressed status for links on mobile */
+.nav-links a:active {
   background-color: var(--white);
 }
-
-.links-div { /* Div for Hamburger Menu Links */
+/* Div for Hamburger Menu Links */
+.links-div {
   /* this is to keep it center aligned with logo */
   position: absolute;
   text-align: right;
   top: 40px;
   right: 20px;
 }
-/* Desktop Header */
-.desktop-header {
-  display: none;
-}
-/* Navbar */
+
+/* Desktop Navbar */
 .desktop-nav {
   align-items: center;
   background-color: var(--black);
@@ -192,9 +203,7 @@ h6 {
   text-decoration: none;
 }
 .nav-links-desktop a:hover {
-  background-color: var(--goldenbrown);
-  color: var(--white);
-  border: 1px solid var(--white);
+  border: 1px solid var(--lightbrown);
 }
 .nav-links-and-icons { /* div for nav links and social icons divs */
   align-items: center;
@@ -204,27 +213,21 @@ h6 {
   color: var(--white);
   font-size: 1.25rem;
 }
-
-/* Footer */
-.footer {
-  padding: 24px;
-}
-.footer-logo {
-  height: auto;
-  width: 120px;
-  margin-bottom: 20px;
-}
-.footer-logo-div {
-  display: flex;
-  justify-content: center;
+.social-icons a:hover {
+  color: var(--lightbrown);
 }
 
-/* Landing Page */
+/* Desktop Header */
+.desktop-header {
+  display: none;
+}
+
+/* Mobile Landing Page */
 .landing-section {
   background-image: url(images/bareque1.jpeg);
 }
 .landing-body,
-.menu-home-body,
+.mobile-menu-body,
 .contact-mobile-body,
 .location-mobile-body,
 .reservations-mobile-body {
@@ -238,10 +241,12 @@ h6 {
   text-align: center;
 }
 .landing-body h1 {
-  margin: 0;
+  margin: 20px 0;
 }
-.landing-body p {
+.landing-pText  {
   color: var(--white);
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 .landing-cta-btn {
   border-radius: 20px;
@@ -250,17 +255,43 @@ h6 {
   margin-top: 20px;
   padding: 8px 32px;
 }
+/* the utensils border icon */
+.landing-section i {
+  font-size: 1.5rem !important;
+  margin: 10px 0;
+}
+.borderDiv {
+  width: 30%;
+  height: 2px;
+  background-color: var(--lightbrown);
+  display: inline;
+}
+.border-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Desktop Landing Page */
 .desktop-landing-content {
   display: none;
 }
-
-/* Menu Section */
-.menu-home-section {
+.landing-statement-text {
+  font-size: 2rem;
+  color: var(--white);
+  line-height: 1px;
+  margin: 20px 0;
+}
+.landing-pText {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  margin: 40px auto;
+}
+/* Mobile Menu Section */
+.mobile-menu-section {
   background-image: url(images/carbonnara.jpg);
 }
 
-/* Culinary Story Section - Desktop Menu */
-
+/* Desktop Culinary Story Section */
 .culinary-desktop-section {
   margin: 20px;
   position: relative;
@@ -282,26 +313,8 @@ h6 {
   width: 40%;
   padding: 16px;
 }
-.card-links {
-  color: var(--lightbrown);
-  font-size: .8rem;
-  margin-bottom: 10px;
-  text-decoration: underline;
-}
-.card-h3 {
-  color: var(--black);
-  font-family: Book Antiqua, serif;
-  margin-bottom: 20px;
-}
-.card-headings {
-  font-weight: 200;
-  margin: 20px 0 20px;
-}
-.card-text {
-  font-size: 14px;
-  padding: 5px 10px 0;
-}
-/* Contact Section */
+
+/* Mobile Contact Section */
 .contact-mobile-section {
   background-image: url(images/bareque4.jpeg);
 }
@@ -330,7 +343,7 @@ h6 {
   margin: 20px 0 40px;
 }
 
-/* Reservations */
+/* Mobile Reservations Section */
 .reservations-mobile-section {
   background-image: url(images/bareque2.jpeg);
 }
@@ -365,7 +378,7 @@ h6 {
   border: none;
 }
 
-/* Explore Menu Section */
+/* Desktop Explore Menu Section */
 .menu-desktop-section{
   align-items: center;
   display: none;
@@ -416,6 +429,20 @@ h6 {
   align-items: center;
 }
 
+/* Mobile Footer */
+.footer {
+  padding: 24px;
+}
+.footer-logo {
+  height: auto;
+  width: 120px;
+  margin-bottom: 20px;
+}
+.footer-logo-div {
+  display: flex;
+  justify-content: center;
+}
+
 /*  Desktop Footer */
 .desktop-footer {
   background-color: var(--black);
@@ -432,26 +459,37 @@ h6 {
 .desktop-footer i {
   margin: 10px 0;
 }
-/* desktop footer image */
-.footer-div2 img  {
-  height: 60vh;
-  background-color: rgba(100, 100, 100, .5);
+.desktop-footer-logo  {
+  background-color: var(--black);
+  height: 100%;
+  width: 150px;
+  padding: 20px 0;
+}
+.footer-socials {
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
 }
 .footer-div1,
+.footer-div2,
 .footer-div3 {
   background-color: var(--black);
-  height: 60vh;
+  height: 30vh;
   color: var(--white);
   padding: 10px 20px;
   text-align: center;
   width: 100%;
 }
-/* Social Icons */
-.ig-footer-icon {
-  font-size: 1.25rem;
-  color: white;
+/* Desktop Footer - Reservations link */
+.desktop-reservation-link {
+  background-color: var(--black);
+  padding: 20px 0 50px;
+  text-align: center;
 }
-
+.desktop-reservation-link a {
+  color: var(--white);
+  font-size: 1rem;
+}
 /* Media Queries */
 @media only screen and (min-width: 600px) {
   body {
@@ -471,18 +509,22 @@ h6 {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    width: 100%;
   }
-  .landing-text {
+  /* the border icon with silverware */
+  .landing-section i {
     color: var(--white);
-    display: inline-block;
-    text-align: center;
-    padding: 0 20px;
-    width: fit-content;
+    font-size: 1.5rem !important;
   }
-  .silverware-border-img {
-    margin: 10px 0;
-    width: 60%;
+  .landing-section .borderDiv {
+    background-color: var(--white);
+    margin: 10px 20px;
+    width: 20%;
+  }
+  /* the div surrounding the border icon */
+  .border-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   /* hiding the mobile landing content */
   .desktop-landing-content {
@@ -496,14 +538,12 @@ h6 {
   .landing-btn-div button {
     display: none;
   }
-  /* all paragrapht text on page */
-  .paragraph-text {
-    width: 60%;
-    /* centering text, p is inline */
-    margin: 0 auto;
+  /* all paragraph text on page */
+  .landing-pText {
+    width: 60%; /* centering text, p is inline */
   }
   /* the mobile section of some sections display none in desktop */
-  .menu-home-section,
+  .mobile-menu-section,
   .contact-mobile-section,
   .location-mobile-section,
   .reservations-mobile-section,
@@ -534,5 +574,43 @@ h6 {
   }
   .silverware-border-img {
     width: 30%;
+  }
+}
+@media only screen and (min-width: 900px) {
+  .desktop-landing-content {
+    display: flex;
+    align-items: center;
+  }
+  .desktop-landing-content h1 {
+    padding: 0;
+    margin: 0;
+  }
+  .landing-statement-text {
+    margin-left: 80px;
+  }
+  .landing-body {
+    width: auto;
+
+    flex-direction: row;
+    justify-content: center;
+    text-align: left;
+  }
+  .landing-pText {
+    margin: 0;
+    width: 50%;
+    padding: 16px 0;
+  }
+  .border-content {
+    justify-content: flex-start;
+    padding: 10px 0;
+    margin-left: 20px;
+  }
+  .borderDiv {
+    margin: 0 !important;
+    width: 15% !important;
+  }
+  .landing-section i {
+    font-size: 1.25rem !important;
+    margin: 0 20px;
   }
 }

@@ -120,7 +120,8 @@ h6 {
 }
 
 /* Social Icons */
-.ig-footer-icon {
+.ig-footer-icon,
+.fa-phone-alt {
   font-size: 1.25rem;
   color: white;
 }
@@ -311,7 +312,7 @@ h6 {
   right: 0px;
   float: right;
   width: 40%;
-  padding: 16px;
+  padding: 32px;
 }
 
 /* Mobile Contact Section */
@@ -349,7 +350,6 @@ h6 {
 }
 /* Reserve Section Desktop */
 .reserve-desktop-section {
-  /* background-image: url(images/seasoning.jpg); */
   background-color: var(--black);
   background-size: cover;
   background-repeat: no-repeat;
@@ -357,7 +357,7 @@ h6 {
   height: 60vh;
   padding: 20px;
 }
-.reserve-desktop-section div {
+.reserve-slide-div-desktop {
   background-color: rgb(0,0,0, .30);
   display: flex;
   align-items: center;
@@ -392,7 +392,7 @@ h6 {
   box-shadow: 0 0 25px 20px rgba(100, 100, 100, .20);
   height: fit-content;
   text-align: center;
-  padding: 16px;
+  padding: 32px;
 }
 .menuExplore-images-div {
   display: flex;
@@ -481,6 +481,9 @@ h6 {
   width: 100%;
 }
 /* Desktop Footer - Reservations link */
+.reservation-footer-link {
+  display: none;
+}
 .desktop-reservation-link {
   background-color: var(--black);
   padding: 20px 0 50px;
@@ -555,7 +558,8 @@ h6 {
   .desktop-footer {
     display: flex;
   }
-  .reserve-desktop-section {
+  .reserve-desktop-section,
+  .reservation-footer-link {
     display: block;
   }
 
@@ -567,6 +571,10 @@ h6 {
   .desktop-header {
     display: inherit;
   }
+}
+/* To fill space on tablet screens */
+.landing-section {
+  width: 100%;
 }
 @media only screen and (min-width: 800px) {
   .menuExplore-images-div img {
@@ -604,6 +612,9 @@ h6 {
     justify-content: flex-start;
     padding: 10px 0;
     margin-left: 20px;
+  }
+  .border-content-cards {
+    justify-content: center !important;
   }
   .borderDiv {
     margin: 0 !important;

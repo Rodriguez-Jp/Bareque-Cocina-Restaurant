@@ -27,8 +27,7 @@ $(".menu-icon-2").css("color","#fff");
 
 // Hover Effect for Menu Images on Desktop
 $(".menu-img-container").on("mouseover", function(event){
-  $(".text-overlay").css("display", "inline");
+for (let i=0, i < 5, i++) {
+
+}
 });
-$(".menu-img-container").on("mouseout", function(){
-  $(".text-overlay").css("display", "none");
-})

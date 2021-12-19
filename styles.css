@@ -2,9 +2,9 @@
 :root {
   --black: #000;
   --white: #fff;
-  --goldenbrown: #5D492C;
+  /* --goldenbrown: #5D492C; */
   --lightbrown: #BBA484;
-  --gold: #c7b324;
+  /* --gold: #c7b324; */
 }
 /* Global Styling */
 body {
@@ -404,12 +404,11 @@ h6 {
 /* Desktop Explore Menu Section */
 .menu-desktop-section{
   align-items: center;
-  display: none;
+  display: block !important;
   flex-direction: row;
   justify-content: center;
   margin: 20px;
 }
-
 .exploreMenu-text-div {
   background-color: var(--white);
   box-shadow: 0 0 25px 20px rgba(100, 100, 100, .20);
@@ -417,38 +416,58 @@ h6 {
   text-align: center;
   padding: 32px;
 }
-.menuExplore-images-div {
-  display: flex;
-  margin-left: 40px;
-}
-.menuExplore-images-div img {
-  border: 2px solid var(--lightbrown);
-  border-radius: 10px;
-  box-shadow: 0 0 25px 10px rgba(100, 100, 100, .10);
-  margin: 5px;
-}
-.menuExplore-images-div img:hover {
+.menu-img-container:hover {
   cursor: pointer;
   opacity: .5;
   background-color: dimgray;
   box-shadow: 0 0 25px 30px rgba(100, 100, 100, .20);
-  filter: brightness(40%);
+  filter: brightness(30%);
 }
 .menu-img-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
   position: relative
 }
+.beveragesMenuObject,
+.sideDishMenuObject,
+.entreesMenuObject,
+.dessertMenuObject {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid var(--lightbrown);
+  border-radius: 10px;
+  box-shadow: 0 0 25px 10px rgba(100, 100, 100, .10);
+}
+.beveragesMenuObject {
+  background-image: url(images/5.jpg);
+}
+.sideDishMenuObject {
+  background-image: url(images/4.jpg);
+}
+.entreesMenuObject {
+  background-image: url(images/2.jpg);
+}
+.dessertMenuObject {
+  background-image: url(images/1.jpg);
+}
 .text-overlay {
-  position: absolute;
-  left: 20%;
-  top: 20%;
-  color: var(--white);
-  display: none;
+  color: #000;
+  display: flex;
+  justify-content: center;
   z-index: 2000;
+}
+.menuBtnsDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .menuImgs1,
 .menuImgs2 {
-  display: flex;
   flex-direction: column;
+  display: flex;
   align-items: center;
 }
 

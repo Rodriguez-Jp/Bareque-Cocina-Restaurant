@@ -403,11 +403,12 @@ h6 {
 
 /* Desktop Explore Menu Section */
 .menu-desktop-section{
-  align-items: center;
-  display: block !important;
+/*  align-items: center;
+  display: flex !important;
   flex-direction: row;
   justify-content: center;
-  margin: 20px;
+  margin: 20px; */
+  display: block !important;
 }
 .exploreMenu-text-div {
   background-color: var(--white);
@@ -446,12 +447,15 @@ h6 {
 }
 .sideDishMenuObject {
   background-image: url(images/4.jpg);
+  display: none;
 }
 .entreesMenuObject {
   background-image: url(images/2.jpg);
+  display: none;
 }
 .dessertMenuObject {
   background-image: url(images/1.jpg);
+  display: none;
 }
 .text-overlay {
   color: #000;
@@ -460,15 +464,15 @@ h6 {
   z-index: 2000;
 }
 .menuBtnsDiv {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 .menuImgs1,
 .menuImgs2 {
-  flex-direction: column;
+  /* flex-direction: column;
   display: flex;
-  align-items: center;
+  align-items: center; */
 }
 
 /* Mobile Footer */
